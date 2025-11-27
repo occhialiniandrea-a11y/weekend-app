@@ -5,7 +5,6 @@ import dynamic from 'next/dynamic';
 import RestaurantDetail from '../components/RestaurantDetail';
 import NotificationManager from '../components/NotificationManager';
 import TelegramNotifications from '../components/TelegramNotifications';
-import TelegramConnect from '../components/TelegramConnect';
 
 // Importiamo la mappa dinamicamente per evitare errori SSR
 const Map = dynamic(() => import('../components/Map'), {
