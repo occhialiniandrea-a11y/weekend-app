@@ -1,39 +1,15 @@
-name: Weekly Notifications
+name: Smart Notifications
 
 on:
   schedule:
-    # Lunedì ore 09:00 (UTC, quindi 10:00 ora italiana)
-    - cron: '0 8 * * 1'
-    # Mercoledì ore 20:00 (UTC, quindi 21:00 ora italiana)
-    - cron: '0 19 * * 3'
-    # Giovedì ore 20:00 (UTC, quindi 21:00 ora italiana)
-    - cron: '0 19 * * 4'
-    # Venerdì ore 10:00 (UTC, quindi 11:00 ora italiana)
-    - cron: '0 9 * * 5'
-  workflow_dispatch: # Permette di lanciare manualmente per test
+    # Controlla sessioni ogni 6 ore
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Test manuale
 
 jobs:
-  send-notification:
+  check-sessions:
     runs-on: ubuntu-latest
     steps:
-      - name: Determina tipo notifica
-        id: notification-type
+      - name: Controlla sessioni e invia notifiche
         run: |
-          DAY=$(date +%u)
-          if [ "$DAY" = "1" ]; then
-            echo "type=monday-reminder" >> $GITHUB_OUTPUT
-          elif [ "$DAY" = "3" ]; then
-            echo "type=wednesday-vote" >> $GITHUB_OUTPUT
-          elif [ "$DAY" = "4" ]; then
-            echo "type=thursday-winner" >> $GITHUB_OUTPUT
-          elif [ "$DAY" = "5" ]; then
-            echo "type=friday-booking" >> $GITHUB_OUTPUT
-          else
-            echo "type=monday-reminder" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Invia notifica Telegram
-        run: |
-          curl -X POST https://weekend-app-one.vercel.app/api/telegram/send \
-            -H "Content-Type: application/json" \
-            -d '{"type":"${{ steps.notification-type.outputs.type }}"}'
+          curl -X GET https://weekend-app-one.vercel.app/api/check-sessions

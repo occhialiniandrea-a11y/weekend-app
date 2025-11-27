@@ -147,7 +147,7 @@ export default function Home() {
             location: location,
             groupName: 'Weekend a ' + location,
             createdBy: 'Admin',
-            deadline: null,
+            deadline: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString(), // 3 giorni da ora,
           }),
         });
 
