@@ -128,9 +128,7 @@ export default function Home() {
   };
 
   const handleOpenShareModal = async () => {
-    setShowShareMessage(true);
-    
-    // Crea automaticamente la sessione se non esiste già
+    // Prima crea la sessione
     if (!voteSessionId && cachedRestaurants && cachedRestaurants.length > 0) {
       setCreatingSession(true);
       
@@ -145,7 +143,7 @@ export default function Home() {
             location: location,
             groupName: 'Weekend a ' + location,
             createdBy: 'Admin',
-            deadline: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString(), // 3 giorni da ora,
+            deadline: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString(),
           }),
         });
 
@@ -159,6 +157,9 @@ export default function Home() {
         setCreatingSession(false);
       }
     }
+    
+    // POI mostra la modale
+    setShowShareMessage(true);
   };
 
   // Se c'è un ristorante selezionato, mostra il dettaglio
