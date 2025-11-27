@@ -75,7 +75,7 @@ export default function Home() {
     setCachedRestaurants(restaurants);
   };
 
-  const generateShareMessage = () => {
+  const generateShareMessage = (sessionId = voteSessionId) => {
     if (!cachedRestaurants || cachedRestaurants.length === 0) {
       return '';
     }
@@ -98,9 +98,9 @@ export default function Home() {
       message += `   🔗 ${resto.googleMapsUrl}\n\n`;
     });
 
-    if (voteSessionId) {
+    if (sessionId) {
       message += `\n📊 VOTA IL TUO PREFERITO:\n`;
-      message += `${window.location.origin}/vote/${voteSessionId}\n\n`;
+      message += `${window.location.origin}/vote/${sessionId}\n\n`;
     }
 
     message += `Buon appetito! 🍽️`;
@@ -128,8 +128,9 @@ export default function Home() {
   };
 
   const handleOpenShareModal = async () => {
-    // Prima crea la sessione
-    if (!voteSessionId && cachedRestaurants && cachedRestaurants.length > 0) {
+    let newSessionId = voteSessionId;
+    
+    if (!newSessionId && cachedRestaurants && cachedRestaurants.length > 0) {
       setCreatingSession(true);
       
       try {
@@ -149,7 +150,8 @@ export default function Home() {
 
         if (response.ok) {
           const data = await response.json();
-          setVoteSessionId(data.sessionId);
+          newSessionId = data.sessionId;
+          setVoteSessionId(newSessionId);
         }
       } catch (error) {
         console.error('Errore creazione sessione:', error);
@@ -158,7 +160,6 @@ export default function Home() {
       }
     }
     
-    // POI mostra la modale
     setShowShareMessage(true);
   };
 
@@ -310,7 +311,7 @@ export default function Home() {
                 )}
                 
                 <div className="bg-gray-50 p-4 rounded border border-gray-300 max-h-96 overflow-y-auto">
-                  <pre className="text-sm whitespace-pre-wrap font-sans text-gray-800">{generateShareMessage()}</pre>
+                  <pre className="text-sm whitespace-pre-wrap font-sans text-gray-800">{generateShareMessage(voteSessionId)}</pre>
                 </div>
 
                 <div className="flex gap-2">
