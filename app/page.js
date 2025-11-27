@@ -132,6 +132,7 @@ export default function Home() {
     
     if (!newSessionId && cachedRestaurants && cachedRestaurants.length > 0) {
       setCreatingSession(true);
+      setShowShareMessage(true); // Apri subito per mostrare il loading
       
       try {
         const response = await fetch('/api/create-session', {
@@ -150,17 +151,18 @@ export default function Home() {
 
         if (response.ok) {
           const data = await response.json();
-          newSessionId = data.sessionId;
-          setVoteSessionId(newSessionId);
+          setVoteSessionId(data.sessionId);
+          // Aspetta che React aggiorni lo stato
+          await new Promise(resolve => setTimeout(resolve, 100));
         }
       } catch (error) {
         console.error('Errore creazione sessione:', error);
       } finally {
         setCreatingSession(false);
       }
+    } else {
+      setShowShareMessage(true);
     }
-    
-    setShowShareMessage(true);
   };
 
   // Se c'è un ristorante selezionato, mostra il dettaglio
