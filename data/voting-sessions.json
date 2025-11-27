@@ -1,0 +1,201 @@
+{
+  "fxxc96nmig8mx7o": {
+    "id": "fxxc96nmig8mx7o",
+    "restaurants": [
+      {
+        "id": 1,
+        "name": "Carbonella",
+        "type": "carne",
+        "position": [
+          43.9119215,
+          12.901988399999999
+        ],
+        "rating": 4.6,
+        "price": "€€",
+        "description": "Ristorante carne a Pesaro",
+        "address": "via, Lungofoglia Caboto, 14, 61121 Pesaro PU, Italia",
+        "phone": "0721 400938",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carbonella"
+      },
+      {
+        "id": 2,
+        "name": "Burgheria steak-house da Bindo",
+        "type": "carne",
+        "position": [
+          43.6802682,
+          12.6435899
+        ],
+        "rating": 4.7,
+        "price": "€€",
+        "description": "Ristorante carne a Pesaro",
+        "address": "Viale John e Robert Kennedy, 5, 61033 Fermignano PU, Italia",
+        "phone": "0722 331407",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Burgheria%20steak-house%20da%20Bindo"
+      },
+      {
+        "id": 3,
+        "name": "Antica locanda Brancaccio",
+        "type": "pasta",
+        "position": [
+          43.915444699999995,
+          12.914349399999999
+        ],
+        "rating": 4.2,
+        "price": "€€",
+        "description": "Ristorante pasta a Pesaro",
+        "address": "Viale Trento, 172, 61121 Pesaro PU, Italia",
+        "phone": "0721 638851",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Antica%20locanda%20Brancaccio"
+      },
+      {
+        "id": 4,
+        "name": "La Macelleria-Cucina & Pizza",
+        "type": "pasta",
+        "position": [
+          43.908448899999996,
+          12.909901399999999
+        ],
+        "rating": 3.7,
+        "price": "€€",
+        "description": "Ristorante pasta a Pesaro",
+        "address": "Via delle Galigarie, 22, 61121 Pesaro PU, Italia",
+        "phone": "334 771 1412",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Macelleria-Cucina%20%26%20Pizza"
+      },
+      {
+        "id": 5,
+        "name": "La Ritrovata Specialita Carne",
+        "type": "carne",
+        "position": [
+          43.6874568,
+          12.8637071
+        ],
+        "rating": 4.7,
+        "price": "€€",
+        "description": "Ristorante carne a Pesaro",
+        "address": "Via Gessare, Via Tarugo, 9, 61040 Sant'Ippolito PU, Italia",
+        "phone": "331 407 7049",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Ritrovata%20Specialita%20Carne"
+      },
+      {
+        "id": 6,
+        "name": "Old Wild West - Pesaro Uci",
+        "type": "carne",
+        "position": [
+          43.9044634,
+          12.866528200000001
+        ],
+        "rating": 4.2,
+        "price": "€€",
+        "description": "Ristorante carne a Pesaro",
+        "address": "Piazza Stefanini, 31, 61122 Pesaro PU, Italia",
+        "phone": "0721 140 1224",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Old%20Wild%20West%20-%20Pesaro%20Uci"
+      }
+    ],
+    "location": "Pesaro",
+    "groupName": "Weekend a Pesaro",
+    "createdBy": "Admin",
+    "createdAt": "2025-11-26T16:47:37.394Z",
+    "deadline": null,
+    "votes": {
+      "user_vc0dam84s": 2
+    },
+    "status": "active",
+    "voterNames": {
+      "user_vc0dam84s": "pippo"
+    }
+  },
+  "2177041mig8ywwl": {
+    "id": "2177041mig8ywwl",
+    "restaurants": [
+      {
+        "id": 1,
+        "name": "Carbonella",
+        "type": "carne",
+        "position": [
+          43.9119215,
+          12.901988399999999
+        ],
+        "rating": 4.6,
+        "price": "€€",
+        "description": "Ristorante carne a Pesaro",
+        "address": "via, Lungofoglia Caboto, 14, 61121 Pesaro PU, Italia",
+        "phone": "0721 400938",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carbonella"
+      },
+      {
+        "id": 2,
+        "name": "Antica locanda Brancaccio",
+        "type": "pasta",
+        "position": [
+          43.915444699999995,
+          12.914349399999999
+        ],
+        "rating": 4.2,
+        "price": "€€",
+        "description": "Ristorante pasta a Pesaro",
+        "address": "Viale Trento, 172, 61121 Pesaro PU, Italia",
+        "phone": "0721 638851",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Antica%20locanda%20Brancaccio"
+      },
+      {
+        "id": 3,
+        "name": "La Macelleria-Cucina & Pizza",
+        "type": "pasta",
+        "position": [
+          43.908448899999996,
+          12.909901399999999
+        ],
+        "rating": 3.7,
+        "price": "€€",
+        "description": "Ristorante pasta a Pesaro",
+        "address": "Via delle Galigarie, 22, 61121 Pesaro PU, Italia",
+        "phone": "334 771 1412",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Macelleria-Cucina%20%26%20Pizza"
+      },
+      {
+        "id": 4,
+        "name": "Old Wild West - Pesaro Uci",
+        "type": "carne",
+        "position": [
+          43.9044634,
+          12.866528200000001
+        ],
+        "rating": 4.2,
+        "price": "€€",
+        "description": "Ristorante carne a Pesaro",
+        "address": "Piazza Stefanini, 31, 61122 Pesaro PU, Italia",
+        "phone": "0721 140 1224",
+        "suggested": true,
+        "placeId": null,
+        "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Old%20Wild%20West%20-%20Pesaro%20Uci"
+      }
+    ],
+    "location": "Pesaro",
+    "groupName": "Weekend a Pesaro",
+    "createdBy": "Admin",
+    "createdAt": "2025-11-26T16:56:56.856Z",
+    "deadline": null,
+    "votes": {},
+    "status": "active"
+  }
+}

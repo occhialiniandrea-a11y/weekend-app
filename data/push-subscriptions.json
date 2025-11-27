@@ -1,0 +1,11 @@
+[
+  {
+    "endpoint": "https://fcm.googleapis.com/fcm/send/fQ9i7BNiG6A:APA91bHLPwERhi-t4vAT6CcLImFCQlea-t1sLo8S0HecZ_wca-YfYlX8UMqFrC6wxfFWW9l_AtKoSVTCgaQ0TKztIY2F1mxaueHegHuKpiJ_z3qIESsHmf5BDUNDBSoI9xyRbQw4o-3M",
+    "expirationTime": null,
+    "keys": {
+      "p256dh": "BBj77rIDl6D58UEXX6TBcRas-ljVa78CIQ4-Cy1bUjh4MfMJ4OcGgevzuxfE6GrxvruBOj4cBghL-ntwPLVm6aI",
+      "auth": "1fl-w8fZoWtTT5p9iV9kbA"
+    },
+    "subscribedAt": "2025-11-26T17:29:23.110Z"
+  }
+]
