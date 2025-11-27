@@ -101,8 +101,6 @@ export default function Home() {
     if (voteSessionId) {
       message += `\n📊 VOTA IL TUO PREFERITO:\n`;
       message += `${window.location.origin}/vote/${voteSessionId}\n\n`;
-    } else {
-      message += `\n👉 Votate il vostro preferito!\n\n`;
     }
 
     message += `Buon appetito! 🍽️`;
